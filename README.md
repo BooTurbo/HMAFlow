@@ -7,7 +7,7 @@ Ziyan Gao <sup>2</sup>,
 Xiangjie Wang <sup>3</sup>,
 Satoshi Yamane <sup>1</sup>
 <br>
-<sup>1</sup>Kanazawa University,  <sup>2</sup>JAIST,  <sup>3</sup>Jilin University
+<sup>1</sup>Kanazawa University,  <sup>2</sup>JAIST,  <sup>3</sup>Jilin University<br/>
 
 <img src="hmaflow.png">
 
