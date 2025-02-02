@@ -35,3 +35,37 @@ pip3 install configargparse
 pip3 install tensorboard
 apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 ```
+
+## Dataset preparation
+Download and prepare the required datasets. The file structure of the datasets is as follows.
+```
+* [FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html#flyingchairs)
+* [FlyingThings3D](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
+* [Sintel](http://sintel.is.tue.mpg.de/)
+* [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow)
+* [HD1K](http://hci-benchmark.iwr.uni-heidelberg.de/) (optional)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
