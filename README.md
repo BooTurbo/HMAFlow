@@ -10,5 +10,5 @@ Satoshi Yamane <sup>1</sup>
 <sup>1</sup>Kanazawa University,  <sup>2</sup>JAIST,  <sup>3</sup>Jilin University
 
 ## Installation
-The code is tested with `python 3.9` and `CUDA 11.8`.
+The code is tested with `python 3.9` and `CUDA 12.0.1`.
 
