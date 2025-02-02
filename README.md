@@ -18,8 +18,8 @@ First, create the container.
 ```
 docker run -it --net=host --ipc=host --privileged -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -v /DataTwo/hmaflow_master:/workspace/hmaflow_master --gpus all --name hmaflow_repro nvidia/cuda:12.0.1-cudnn8-devel-ubuntu22.04 /bin/bash
 Ctrl + D
-docker start -ai hmaflow-repro
-cd workspace/hmaflow-master
+docker start -ai hmaflow_repro
+cd workspace/hmaflow_master
 ```
 Install PyTorch and various packages inside the container.
 ```
