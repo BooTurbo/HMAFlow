@@ -67,7 +67,7 @@ We use two A40 GPUs to train our model.
 /.train_model.sh
 ```
 ## License
-This repository is released under the Apache 2.0 license as found in the LICENSE file.
+This repository is released under the Apache 2.0 license as found in the [LICENSE](https://github.com/BooTurbo/HMAFlow/blob/main/LICENSE) file.
 
 ## Acknowledgement
 This code is mainly built upon and adapted from [RAFT](https://github.com/princeton-vl/RAFT) and [DINO](https://github.com/facebookresearch/dino). Many thanks to the authors for their contributions.
