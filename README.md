@@ -12,7 +12,7 @@ Satoshi Yamane <sup>1</sup>
 <img src="hmaflow.png">
 
 ## Installation
-The code is tested with `python 3.9` and `CUDA 12.0.1`. We use Docker containers to deploy all experiments. We use the CUDA image [nvidia/cuda:12.0.1-cudnn8-devel-ubuntu22.04](https://hub.docker.com/r/nvidia/cuda/tags?name=12.0.1).
+The code is tested with `python 3.9` and `CUDA 12.0.1`. We use Docker containers to deploy all experiments. The CUDA image version is [nvidia/cuda:12.0.1-cudnn8-devel-ubuntu22.04](https://hub.docker.com/r/nvidia/cuda/tags?name=12.0.1).
 
 First, create the container.
 ```
