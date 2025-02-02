@@ -10,5 +10,26 @@ Satoshi Yamane <sup>1</sup>
 <sup>1</sup>Kanazawa University,  <sup>2</sup>JAIST,  <sup>3</sup>Jilin University
 
 ## Installation
-The code is tested with `python 3.9` and `CUDA 12.0.1`.
+The code is tested with `python 3.9` and `CUDA 12.0.1`. We use Docker containers to deploy all experiments. 
 
+First, create the container.
+```
+docker run -it --net=host --ipc=host --privileged -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -e GDK_SCALE -e GDK_DPI_SCALE -v /DataTwo/hmaflow_master:/workspace/hmaflow_master --gpus all --name hmaflow_repro nvidia/cuda:12.0.1-cudnn8-devel-ubuntu22.04 /bin/bash
+Ctrl + D
+docker start -ai hmaflow-repro
+cd workspace/hmaflow-master
+```
+Install PyTorch and various packages inside the container.
+```
+apt update
+apt upgrade -y
+apt install -y python3-pip
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+apt install python3
+pip3 install scipy
+apt install -y python3-opencv
+pip3 install matplotlib
+pip3 install configargparse
+pip3 install tensorboard
+apt install libcanberra-gtk-module libcanberra-gtk3-module -y
+```
