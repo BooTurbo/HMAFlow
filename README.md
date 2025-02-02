@@ -38,34 +38,36 @@ apt install libcanberra-gtk-module libcanberra-gtk3-module -y
 
 ## Dataset preparation
 Download and prepare the required datasets. The file structure of the datasets is as follows.
-```
 * [FlyingChairs](https://lmb.informatik.uni-freiburg.de/resources/datasets/FlyingChairs.en.html#flyingchairs)
 * [FlyingThings3D](https://lmb.informatik.uni-freiburg.de/resources/datasets/SceneFlowDatasets.en.html)
 * [Sintel](http://sintel.is.tue.mpg.de/)
 * [KITTI](http://www.cvlibs.net/datasets/kitti/eval_scene_flow.php?benchmark=flow)
 * [HD1K](http://hci-benchmark.iwr.uni-heidelberg.de/) (optional)
+
+```
+├── datasets
+    ├── Sintel
+        ├── test
+        ├── training
+    ├── KITTI
+        ├── testing
+        ├── training
+        ├── devkit
+    ├── FlyingChairs_release
+        ├── data
+    ├── FlyingThings3D
+        ├── frames_cleanpass
+        ├── frames_finalpass
+        ├── optical_flow
 ```
 
+## Training
+We use two A40 GPUs to train our model.
+```
+/.train_model.sh
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Acknowledgement
+This code is mainly built upon and improved from [RAFT](https://github.com/princeton-vl/RAFT) and [DINO](https://github.com/facebookresearch/dino). Many thanks to the authors for their contributions.
 
 
